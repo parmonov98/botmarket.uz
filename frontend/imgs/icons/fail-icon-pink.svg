@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146 146" width="146" height="146">
+	<defs>
+		<image width="24" height="24" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADvElEQVRIS52VXWgcVRTHf2cy6c5sm1gLtaIVKipiilQiGuLOlghFamsUfJBA++CjligGG9rsbnDBTKptrUoVpQiiPkj9AMFqhBotya41UElsi/rgU0EtRtBEk500O3PkJrtls9nExPt477nnd77+9wrLLG3tcgt2fBeqSUFuBzYgEmqkv4twAWTQydlDQjZayo3UOvjLO3ito3aPij4BNCwXBMglEY7G6uw35Ey2WG27CBAkU7tV5W1gI6DAoCqfiRWNSlR3WRBbrXCzqtUK+ihwp3GqcL7Oko7YUN+PlZAFgMBL71N4DTD7X1gSPRsbPvTDchkEXmanoseAO4BJLNrdIX+ofOcqoJBM7UXlPSBS6I7nfHNpRcv0KrDWnkB0r4FYluXFhp6/YC7PAYL7MreopeeBuChPOnn/zRV5rjBSkCCRebcE+clpmLxLBo7PzAGmE+lPRHgE4R132H98tc7L9tqWdYLi7HdAkwoH4sP+YZlJ9G6NJLoITM3a9Vsaz2T/WA1AH3wqZiIt3ykkUvcj8hUw7hTGb5RCIu0jpBR9PZ7r76x2Pp3IdFnoDU7e7648CxLpIxHyq5vve4UdBxrlyxcnyufTXnpMYJuo7JaClx4B7kV0hzvcP1gNMI4U9gscLUOq95SsVSm2gpd6DiQryEsGMGnE5DjF9ZVRVEdbhpRmfgFwUVBe5iFFPwUGDMCIKXBzvltpaKZC5oU2t8pRl0bvaja1+jXl9d5tEZ0DHSkDQjfn28sKqlSqlQCmvd4WIfoWyBnAb8D1GrI5ftb/pRaksuYrKdF0MtUhKu+L8rEBDAA7VemI5/2T/6fJiyYvmT4uSidoRgIv/bTCqwqn4jm/fbVjGs/3vbygd03ZNcGG2UvApsiymuXvZM9GWy2zEQsjbV73Tf/YaoRWI+NOFUwGo07eb55/ixKZwyrabTZjjZOtlcpcDaywPXMzoY4iXCNIu5PrOzUH0Af2rw0KsTGUW0E+cGx7T63PYzlYqRJfA1sFPnRy/mOliZu/NpPsaVK18grrgdNFifY0DB8aX0kGV7zebaFEH5kAFb53Z+u3y0jWCHj+uS6vqWSq2VL53DRI4M8I9V0nfGsphRfaDm7RYl2XwD7ANsIqirZXBrboy/ynJbXJWsMJUXm4BDYvZU6EUfO4QWQTcZOItAD3lIIMReVYrHGit7p/NT9947jgZdpU9RkRdgH1NUulTCCclDA84px94edaNksCysball03M3ulFZHbFLkOtIjoZY3koltff+6/huFfGa+2p4QW6sgAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Pricing">
+		<g id="Plans">
+			<g id="Bronze Plan">
+				<g id="Features">
+					<use id="Prostokąt 18 kopia 3" href="#img1" transform="matrix(1,0,0,1,60,60)"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

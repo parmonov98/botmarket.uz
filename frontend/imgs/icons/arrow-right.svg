@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" width="35" height="35">
+	<defs>
+		<image width="39" height="39" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAADLElEQVRYR82YTUwTQRiG35mlGE30gAdPJngRjWeikW4bg4YTSrq1AQY1GPDCwWDk4t9BDReMJB4FTVQWCHYblHjgQEy71WjwarBe1HjyIAmaKD/dGbP9gba0dLfUZHprduadZ79v55v3GwKJf0RiNlQMN/E8epxTpRkQjQAaANQDqAWwCuArgARA5im35jrO+t9WEgRXcGNj7/aQXclLgOgRAj8JxBwRZJ5SJGiy7msodGR1aupjLa9ZrOccDYKIRgHSTAj2AmRU/Kl52NV17JdTUMdwesQ8D4HHEGKYczp6LuRNOF3k2VS8gVLeA0L6QXCRBdSnTuaWhZuMRA9bQrkCiFqq8Bsdbf7vToSLjZmYju7nFr0LkFWFWPfbA/6FrbS2hNONqA+g1whEuFPzjVYKVThv3Ij1CJAgwAeZ5o+V0i0JlwGbhRBtLOibrRZYVkcPx1pAyDTAW0oBFoVLp5IO29/X/wArAOxXCO8vluKicLoRHyHg76uZylKRT6eYHmWat7dwzCa4zK5sZpp6odqpLKWnG+YTEMwV7uI8uFQd27m2SBV+YDu70u1LZXbxF/HXU5dbB/Pg9Ej8Kjjfx4K+AbcLbHe8Ho4NgdIfLOC9l9UqgDM/8SQ546bA2kLjEfPRylKyr7v7xHKlkKlCXSNesIB6aBOcfVZalA51aWqT2wV0wxQCWCAgfUzzvnY7Pzt+zDDfKJwPZM/i9cjpRvwmwD1M891yK27DbcwR15nmG3SrYY/XjdhtgK4xzXvH/p8DZ74kAiOdQXXGrXA+HCBAXqWj2PTNjdZ42GwVBL1MU08XwiUUgtb2gPrZjWD6jXMjtz57EUT0sYBv0qneZMQ8aAnMME21LVhe5FY8Vt1u2/Y4FVuv9MXh0o8FHrCgetmJpm231pTF30xTdxTCCaapZV1KsUVKRC536AePtXwyFDq1VA7S1spy5H5zUkdO6m9O5t0qcZ2T+oRI1auIpGdrGk5iVyK1n8uk1u5P5XPCG8eRpD2EDSh195V2GqmGWr6+dSO9knb8WUBp70py7Y2Ut0y5gNLezxWaROluNsu52Go/r8iWVxuilN4/+LU6RpHDSq8AAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Drag &amp; Drop">
+		<g id="Arrows">
+			<use id="Arrow right" href="#img1" transform="matrix(1,0,0,1,-2,-2)"/>
+		</g>
+	</g>
+</svg>
