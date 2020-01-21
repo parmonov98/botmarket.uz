@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merkury Dashboard - main</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<div class="root" id="root">
+    <div class="left__panel sticky">
+        <ul class="item-list" id="sidebar-menu" data-sidebar="true">
+            <li class="item">
+                <img src="/imgs/logo.png" alt="go to Index page" class="logo">
+            </li>
+            <li class="item active-item">
+                <a href="#" class="item-link home"></a>
+                Home
+            </li>
+            <li class="item">
+                <a href="#" class="item-link workflow"></a>
+                workflow
+            </li>
+            <li class="item">
+                <a href="#" class="item-link statistics"></a>
+                Statistics
+            </li>
+            <li class="item">
+                <a href="#" class="item-link calendar"></a>
+                calendar
+            </li>
+            <li class="item">
+                <a href="#" class="item-link users"></a>
+                users
+            </li>
+            <li class="item">
+                <a href="#" class="item-link settings"></a>
+                settings
+            </li>
+        </ul>
+
+    </div>
+    <div class="right__panel">
+        <header class="sticky">
+            <div class="toggler_plus_searchForm">
+                <a href="#" onclick="sidebarToggler()" class="icon menu-toggler" ></a>
+                <a href="#" class="icon search-toggler" ></a>
+            </div>
+            <div class="action_plus_profile">
+                <button class="add_project">+ Add project</button>
+                
+                <div class="messages-card">
+                    <a href="#" class="icon messages-toggler" ></a>
+                    <div class="messages-content card" data-shown="false">
+                        <div class="card-content">
+                            <div class="item-list">
+                                <div class="item-div">
+                                    <author class="user">Murod</author> 
+                                    <p>Hi, How is it going?</p>
+                                </div>
+                                <div class="item-div">
+                                    <author class="user">Jahon</author> 
+                                    <p>Hi, How is it going?</p>
+                                </div>
+                                <div class="item-div">
+                                    <author class="user">Azamat</author> 
+                                    <p>Hi, How is it going?</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="notifications-card ">
+                    <a href="#" class="icon notifications-toggler"></a>
+                    <div class="notifications-content card" data-shown='false'>
+                        <div class="card-content">
+                            <div class="item-list">
+                                <div class="item-div">
+                                    <a href="#" class="icon notifications-toggler"></a>
+                                    <div class="content-message">
+                                        <h4>Some  performed aome action?</h4>
+                                        <p>We got a new transaction from </p>
+                                    </div>
+                                </div>
+                            
+                                <div class="item-div">
+                                    <a href="#" class="icon notifications-toggler"></a>
+                                    <div class="content-message">
+                                        <h4>Some  performed aome action?</h4>
+                                        <p>We got a new transaction from </p>
+                                    </div>
+                                </div>
+                            
+                                <div class="item-div">
+                                    <a href="#" class="icon notifications-toggler"></a>
+                                    <div class="content-message">
+                                        <h4>Some  performed aome action?</h4>
+                                        <p>We got a new transaction from </p>
+                                    </div>
+                                </div>
+                            
+                                <div class="item-div">
+                                    <a href="#" class="icon notifications-toggler"></a>
+                                    <div class="content-message">
+                                        <h4>Some  performed aome action?</h4>
+                                        <p>We got a new transaction from </p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profile-card">
+                    <a href="#" class="icon profile-toggler"></a>
+                    <div class="profile-content card" data-shown="false">
+                        <h3 class="card-head">Welcome <em>Murod</em></h3>
+                        <div class="card-content">
+                            <div class="circle">
+                                <img src="/imgs/person.jpg" alt="">
+                            </div>
+                            <p> 
+                                <a href="#fb">telegram</a>
+                                <a href="#fb">gmail</a>
+                            </p>
+                            <div class="btns">
+                                <button class="btn btn-edit">Edit</button>
+                                <button class="btn btn-logout">Log out</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <div class="diagrams">
+
+                <div class="diagram-card sales-chart">
+                    <div class="diagram-head">
+                        <h3>Your sales</h3> 
+                        <div class="year-options">
+                            <a href="#" class="option-year option-button">Period: <span> Last year</span> <b class="icon icon-arrow-down"></b> </a>
+                            <div class="list-options ">
+                                <a href="#" class="option-item">last month</a>
+                                <a href="#" class="option-item">last week</a href="#">
+                                <a  href="#" class="option-item">last day</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="diagram-content">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+                <div class="diagram-card report-chart">
+                    <div class="diagram-head">
+                        <h3>report</h3> 
+                        <div class="year-options">
+                            <a href="#" class="option-year option-button2">Period: <span> Last year</span> <b class="icon icon-arrow-down"></b> </a>
+                            <div class="list-options">
+                                <a href="#" class="option-item">last month</a>
+                                <a href="#" class="option-item">last week</a href="#">
+                                <a  href="#" class="option-item">last day</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="diagram-content">
+                        <canvas id="myLine"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="notification-cards">
+                <div class="tasks-card card">
+                    <div class="card-head">
+                        <h3>Tasks</h3> 
+                        <div class="icons">
+                            <a href="#" class="icon icon-round">5</a>
+                            <a href="#" class="icon icon-round">2</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="list-tasks" id="tasks-list">
+                            <div class="task-item">
+                                <a href="#" class="icon icon-round"></a>
+                                <div>
+                                    <h4 class="task-title">New website for Symo.co</h4>
+                                    <span> <a href="#" class="icon icon-clock"></a> 2 days delays </span>
+                                </div>
+                                <div class="task-actions">
+                                    <a href="#" class="icon icon-three-dots"></a>
+                                    <div class="action-list">
+                                        <a href="#">Delay</a>
+                                        <a href="#">Confirm</a>
+                                        <a href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-item">
+                                <a href="#" class="icon icon-round"></a>
+                                <div>
+                                    <h4 class="task-title">New website for Symo.co</h4>
+                                    <span> <a href="#" class="icon icon-clock"></a> 2 days delays </span>
+                                </div>
+                                <div class="task-actions">
+                                    <a href="#" class="icon icon-three-dots"></a>
+                                    <div class="action-list">
+                                        <a href="#">Delay</a>
+                                        <a href="#">Confirm</a>
+                                        <a href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-item">
+                                <a href="#" class="icon icon-round"></a>
+                                <div>
+                                    <h4 class="task-title">New website for Symo.co</h4>
+                                    <span> <a href="#" class="icon icon-clock"></a> 2 days delays </span>
+                                </div>
+                                <div class="task-actions">
+                                    <a href="#" class="icon icon-three-dots"></a>
+                                    <div class="action-list">
+                                        <a href="#">Delay</a>
+                                        <a href="#">Confirm</a>
+                                        <a href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-item">
+                                <a href="#" class="icon icon-round"></a>
+                                <div>
+                                    <h4 class="task-title">New website for Symo.co</h4>
+                                    <span> <a href="#" class="icon icon-clock"></a> 2 days delays </span>
+                                </div>
+                                <div class="task-actions">
+                                    <a href="#" class="icon icon-three-dots"></a>
+                                    <div class="action-list">
+                                        <a href="#">Delay</a>
+                                        <a href="#">Confirm</a>
+                                        <a href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-card card">
+                    <div class="card-head">
+                        <h3>Messages</h3> 
+                        <div class="icons">
+                            <a href="#" class="icon icon-round">2</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="list-tasks" id="tasks-list">
+                            <div class="task-item">
+                                <a href="#" class="icon icon-round"></a>
+                                <div>
+                                    <h4 class="task-title">New website for Symo.co</h4>
+                                    <span> <a href="#" class="icon icon-clock"></a> 2 days delays </span>
+                                </div>
+                                <div class="task-actions">
+                                    <a href="#" class="icon icon-three-dots"></a>
+                                    <div class="action-list">
+                                        <a href="#">Delay</a>
+                                        <a href="#">Confirm</a>
+                                        <a href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-item">
+                                <a href="#" class="icon icon-round"></a>
+                                <div>
+                                    <h4 class="task-title">New website for Symo.co</h4>
+                                    <span> <a href="#" class="icon icon-clock"></a> 2 days delays </span>
+                                </div>
+                                <div class="task-actions">
+                                    <a href="#" class="icon icon-three-dots"></a>
+                                    <div class="action-list">
+                                        <a href="#">Delay</a>
+                                        <a href="#">Confirm</a>
+                                        <a href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-item">
+                                <a href="#" class="icon icon-round"></a>
+                                <div>
+                                    <h4 class="task-title">New website for Symo.co</h4>
+                                    <span> <a href="#" class="icon icon-clock"></a> 2 days delays </span>
+                                </div>
+                                <div class="task-actions">
+                                    <a href="#" class="icon icon-three-dots"></a>
+                                    <div class="action-list">
+                                        <a href="#">Delay</a>
+                                        <a href="#">Confirm</a>
+                                        <a href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-item">
+                                <a href="#" class="icon icon-round"></a>
+                                <div>
+                                    <h4 class="task-title">New website for Symo.co</h4>
+                                    <span> <a href="#" class="icon icon-clock"></a> 2 days delays </span>
+                                </div>
+                                <div class="task-actions">
+                                    <a href="#" class="icon icon-three-dots"></a>
+                                    <div class="action-list">
+                                        <a href="#">Delay</a>
+                                        <a href="#">Confirm</a>
+                                        <a href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity-card card">
+                    <div class="card-head">
+                        <h3>Activities</h3> 
+                        <div class="icons">
+                            <a href="#" class="icon icon-round">2</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="list-tasks" id="tasks-list">
+                            <div class="task-item">
+                                <a href="#" class="icon icon-round"></a>
+                                <div>
+                                    <h4 class="task-title">New website for Symo.co</h4>
+                                    <span> <a href="#" class="icon icon-clock"></a> 2 days delays </span>
+                                </div>
+                                <div class="task-actions">
+                                    <a href="#" class="icon icon-three-dots"></a>
+                                    <div class="action-list">
+                                        <a href="#">Delay</a>
+                                        <a href="#">Confirm</a>
+                                        <a href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-item">
+                                <a href="#" class="icon icon-round"></a>
+                                <div>
+                                    <h4 class="task-title">New website for Symo.co</h4>
+                                    <span> <a href="#" class="icon icon-clock"></a> 2 days delays </span>
+                                </div>
+                                <div class="task-actions">
+                                    <a href="#" class="icon icon-three-dots"></a>
+                                    <div class="action-list">
+                                        <a href="#">Delay</a>
+                                        <a href="#">Confirm</a>
+                                        <a href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-item">
+                                <a href="#" class="icon icon-round"></a>
+                                <div>
+                                    <h4 class="task-title">New website for Symo.co</h4>
+                                    <span> <a href="#" class="icon icon-clock"></a> 2 days delays </span>
+                                </div>
+                                <div class="task-actions">
+                                    <a href="#" class="icon icon-three-dots"></a>
+                                    <div class="action-list">
+                                        <a href="#">Delay</a>
+                                        <a href="#">Confirm</a>
+                                        <a href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-item">
+                                <a href="#" class="icon icon-round"></a>
+                                <div>
+                                    <h4 class="task-title">New website for Symo.co</h4>
+                                    <span> <a href="#" class="icon icon-clock"></a> 2 days delays </span>
+                                </div>
+                                <div class="task-actions">
+                                    <a href="#" class="icon icon-three-dots"></a>
+                                    <div class="action-list">
+                                        <a href="#">Delay</a>
+                                        <a href="#">Confirm</a>
+                                        <a href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<script src="js/ui.js"></script>
+<script src="js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+
+
+<script>
+
+const chart = new Chart(
+    document.getElementById("myChart"),
+{
+    "type":"doughnut",
+    startAngle: 90,
+    "data":
+        {
+            labels: ["Website", "Logo", "Social Media", "Software", "Web deigns"],
+            datasets:[
+                {
+                    "label":"My First Dataset","data":[300,50,100, 50, 50],
+                    "backgroundColor":["#25396e","#5584ff","#4b74e0", "#3755a4", "#4164c2"]
+                }                
+            ],
+            indexLabelFontSize: 27,
+        },
+        options: {
+            elements: {
+                arc: {
+                    borderWidth: 0
+                }
+            },
+            percentageInnerCutout: 10,
+            legend: {
+                position: 'right',
+                labels: {
+                    boxWidth: 30,
+                    padding: 20,
+                    paddingLeft: 30,
+                    fontSize: 18
+                }
+            },
+            tooltips: {
+                titleFontSize: 16,
+                bodyFontSize: 16
+            }
+        }
+});
+
+const ctx = document.getElementById('myLine');
+var stackedLine = new Chart(ctx, {
+    type: 'line',
+    data: {
+            labels: ["January", "February", "March", "April", "June", "July", "August", "September", "October", "November", "December"],
+            datasets:[
+                {
+                    "label":"My First Dataset",
+"data":[320,350, 280, 400, 380, 700, 410, 460, 265, 330, 260],
+borderColor: "#5583ff",
+backgroundColor: "transparent"
+                }
+            ],
+            indexLabelFontSize: 27,
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                stacked: true
+            }]
+        }
+    }
+});
+
+</script>
+</body>
+</html>

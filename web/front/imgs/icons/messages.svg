@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 23" width="33" height="23">
+	<defs>
+		<image width="25" height="17" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAARCAYAAAAougcOAAABkklEQVQ4T63Uz4tOcRTH8deUHykpCxsLf4BsrCyErZSykiFJIhbyM2YaJWWhNEnKjySUX2VhwUoRKxtiJSWys7A3zcr00bn1uDPPM/Pkns3t3s73vO855/P5jmALDmKJ7mIxXuJGSo5U3bwc7o7hI3ZjOd4H8hyjOIaLHYBSL4AT+IKngfzBhwJtxN3/AN3EEVyv585eSOr+xK7azSOsGhJ2DpN4jB11dhakqZnRfUJA6xcI2o+3BdjQc6YvJDkncbtA2weAftX8fxdgTSt3ICS5l3GmZ75tVrrNgtfiCRbN8TPzQnLmAfZioqW8FwXYh2sDOp0XMl2FlpWxtuEebpWnzuMOHmJzH9BAyFfswaZSzBucwkq8whUcRyR7usDJb0dfyOsCxEzZSRPfShCRZ9TUxLPKO4CxhSz+Po7WnDPvdmSES+f4/g5nsa6E0qTM6iRXSiCZe5w/bHyvTqZqTyvwD+QQPiOtD+v03p+JX8bLmBHEheZa2VoLjcO7iku4WsL5e0FGiulkdVeEqpOxp5MfMxgbYxJVNEALAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Menus">
+		<g id="Top menu">
+			<use id="Messages" href="#img1" transform="matrix(2.917,0,0,2.875,0,0)"/>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: "Roboto";
+}
+input, button{
+    border: 0;
+    outline: 0;
+    padding: 5px;
+}
+h1, h2, h3, h4, h5, h5, p{
+    margin: 0;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+}
+svg{
+    width: 32px;
+    height: 32px;
+}
+
+
+.btn{
+    padding: 8px 15px;   
+    cursor: pointer;
+}
+
+.item-list > .item{
+    color: cadetblue;
+    padding: 5px;
+}
+.item-list{
+    margin: 0;
+    padding: 0;
+}
+
+.icon{
+    margin: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+}
+
+
+/* mobile screens */
+/* @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    /* some CSS here */
+    /* .root {
+        display: flex;
+        flex-direction: column;
+    }
+}  */
+
+
+/* mobiles such as samsung s3-s8 and iphones 4s-8s */ 
+@media screen and (min-device-width: 359px) and (max-device-width: 769px){
+    /* some CSS here */
+    .root {
+        display: flex;
+        
+    }
+
+    
+}
+/* mobile screens */
