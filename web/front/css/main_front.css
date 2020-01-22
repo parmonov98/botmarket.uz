@@ -1,3 +1,10 @@
+:root{
+    --menu-item-color: #c3d6e6;
+
+    --btn-bg-color: #5584ff;
+    --btn-text-color: #c3d6e6;
+}
+
 body{
     background: #0e1a35;
     overflow-x: hidden;
@@ -56,14 +63,13 @@ html {
     padding: 12px 20px;
     font-size: 18px;
     letter-spacing: 0px;
-    color: #ffffff;
+    color: var(--menu-item-color);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     text-decoration: none;
     border: 1px solid transparent;
     transition: 0.3s;
 }
-
 
 .header__block{
     margin-top: 140px;
@@ -88,6 +94,10 @@ html {
     text-align: center;
 }
 
+.header__get-started-btn:hover{
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+}
 .header__get-started-btn{
     padding: 16px 55px;
     border-radius: 34px;
@@ -152,7 +162,14 @@ html {
     font-weight: 400;
     text-align: center;
 }
+.features__items_i > .app__btn:hover{
+    background-color: #5584ff;
+    border: #5584ff 1px dotted;
+    box-shadow: 0 0 2px 5px #5584ff;
+    color: #f6f7fa;
+}
 .features__items_i > .app__btn{
+    transition: 0.3s;
     font-size: 18px;
     letter-spacing: 0px;
     line-height: 138px;
