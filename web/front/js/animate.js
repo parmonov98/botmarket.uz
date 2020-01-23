@@ -1,10 +1,9 @@
 class animate{
-    screens = [];
-    offsets = [];
+    screens = []; // screens's sizes  
+    offsets = [];   
     DEBUG = false;
 
-    constructor(items){ // an array of list of ids of screens on the page
-        this.screens = items;
+    constructor(){ // an array of list of ids of screens on the page
         this.setAllScreens();
 
         window.addEventListener('scroll', (e) => {
@@ -39,7 +38,7 @@ class animate{
     }
 
     animateScreen(screen){
-        console.log(screen);
+        //console.log(screen);
 
         const elements = screen.querySelectorAll('[data-animations]');
         if(elements.length === 0){
@@ -51,9 +50,11 @@ class animate{
             }
             
         }else{
-            console.log(elements);
+            //console.log(elements);
             elements.forEach(el => {
-                el.className += ' ' + el.getAttribute('data-animations');
+                if (!el.classList.contains(el.getAttribute('data-animations'))) {
+                    el.className += ' ' + el.getAttribute('data-animations');
+                }                    
             });
         }
         
