@@ -11,12 +11,12 @@
     <!-- <link rel="stylesheet" href="/css/materialize.css"> -->
     
 </head>
-<body>
+<body data-offsets="0,400,1200">
 <section class="sec-header" id="home">
     <div class="wrapper">
-        <nav class="header__nav activated animate to-bottom" id="menu">
+        <nav class="header__nav activated ns animate to-bottom" data-animations="" id="menu">
             <a href="#" id="logo" class="logo__active"><img src="imgs/logo.png" alt="Logo company"></a>
-            <ul class="nav__list " id="menu-list">
+            <ul class="nav__list  " id="menu-list">
                 <span class="menu-icon" id="meni-icon">|||</span>
                 <li class="nav__item"><a href="#home">Asosiy</a></li>
                 <li class="nav__item"><a href="#features">Qulayliklari</a></li>
@@ -26,23 +26,23 @@
                 <li class="nav__item "><a href="/login.html#login">Kirish</a></li>
             </ul>
         </nav>
-        <div class="header__block animate to-top s-1">
+        <div class="header__block animate to-top s-1" data-animations="">
             <h1 class="header__block_title">Onlayn biznesingiz 
                 <span style="color: cornflowerblue;font-weight: 700;">BotMarket</span>
                  bilan rivojlantiring.</h1>
-            <h4 class="header__block_title-small animate to-right s-2" style="margin: 100px 0 30px;">Siz uchun ishonchli va tezkor hamkor!</h4>
-            <a href="/signup" class="header__get-started-btn animate turn-over-top">
+            <h4 class="header__block_title-small animate to-right s-2" data-animations="" style="margin: 100px 0 30px;">Siz uchun ishonchli va tezkor hamkor!</h4>
+            <a href="/signup" class="header__get-started-btn ns " data-animations="animate turn-over-top">
                 Sinab ko'rish
             </a>
         </div>
-        <img src="imgs/positioned-dashboard.png" class="overpositioned-image animate to-top s-3">
+        <img src="imgs/positioned-dashboard.png" class="overpositioned-image ns animate" data-offset="400" data-animations=" to-top s-3">
     </div>
 </section>
-<section class="features" id="features">
+<section class="features " data-offset="1200" id="features">
     <div class="wrapper">
         <div class="features__items">
-            <div class="features__items_i animate to-right">
-                    <img src="imgs/Inteligentny-obiekt-blocks.png">
+            <div class="features__items_i animate" data-animations=" to-right">
+                    <img src="imgs/Inteligentny-obiekt-blocks.png" class="ns">
                     <h4>Mijozlar oqimini boshqarish</h4>
                     <p class="block__text">
 Bilamizki, hozirgi kunda Telegram plarformasida online do'kon magazinlar orqali biznes qilish ommalashgan. 
@@ -51,8 +51,8 @@ Bilamizki, hozirgi kunda Telegram plarformasida online do'kon magazinlar orqali 
                     </p>
                     <a href="#" class="app__btn">Batafsil</a>
             </div>
-            <div class="features__items_i animate to-right s-1">
-                    <img src="imgs/Inteligentny-obiekt-lines.png">
+            <div class="features__items_i animate" data-animations=" to-right s-1">
+                    <img src="imgs/Inteligentny-obiekt-lines.png" class="ns">
                     <h4>Statistika  & Hisob-kitob</h4>
                     <p class="block__text">
                         Shu paytgacha siz Telegram kanal va chatlar orqali mahsulotlaringizni sotib ko'rgan bo'lsangiz, 
@@ -62,8 +62,8 @@ Bilamizki, hozirgi kunda Telegram plarformasida online do'kon magazinlar orqali 
                     </p>
                     <a href="#" class="app__btn">Batafsil</a>
             </div>
-            <div class="features__items_i animate to-right s-2">
-                    <img src="imgs/Inteligentny-obiekt-calendar.png">
+            <div class="features__items_i animate" data-animations=" to-right s-2">
+                    <img src="imgs/Inteligentny-obiekt-calendar.png" class="ns">
                     <h4> Premium qulayliklar</h4>
                     <p class="block__text">
         Bilamizki, har bir sotuvchi, o'zining mahsulotini tezroq va ko'proq sotishga intiladi. 
@@ -75,9 +75,9 @@ Bilamizki, hozirgi kunda Telegram plarformasida online do'kon magazinlar orqali 
         </div>
     </div>
     
-    <div class="features__big-item">
+    <div class="features__big-item" data-offset="2000">
         <div class="wrapper">
-            <div class="features__big-item-left animate to-right s-1">
+            <div class="features__big-item-left animate" data-animations=" to-right s-1">
                 <h1>Tezkor va oson ishni boshlash!</h1>
                 <p class="block__text">
     Agar siz Telegram BOTni dasturchiga buyurtma beradigan bo'lsangiz, 
@@ -89,25 +89,35 @@ Bilamizki, hozirgi kunda Telegram plarformasida online do'kon magazinlar orqali 
         bir qator imkoniyatlarga ega bo'lasiz!
                 </p>
                 <ul class="list">
-                    <li class="list__item animate to-right s-2">Birinchi o'rinda qimmatli vaqtingizni tejaysiz.</li>
-                    <li class="list__item animate to-right s-3">Bosh og'riqlarsiz oson va tezlik bilan ishni boshlaysiz.</li> 
-                    <li class="list__item animate to-right s-4">Mahsulotlar va mijozlar ustidan oson boshqaruv.</li> 
-                    <li class="list__item animate to-right s-5">Marketing uchun qulayliklarni osonlik bilan qilasiz.</li> 
+                    <li class="list__item animate" data-animations=" to-right s-2">Birinchi o'rinda qimmatli vaqtingizni tejaysiz.</li>
+                    <li class="list__item animate" data-animations=" to-right s-3">Bosh og'riqlarsiz oson va tezlik bilan ishni boshlaysiz.</li> 
+                    <li class="list__item animate" data-animations=" to-right s-4">Mahsulotlar va mijozlar ustidan oson boshqaruv.</li> 
+                    <li class="list__item animate" data-animations=" to-right s-5">Marketing uchun qulayliklarni osonlik bilan qilasiz.</li> 
                 </ul>
             </div>
-            <div class="features__big-item-right animate to-left s-1">
-               <img src="imgs/double-dashboard-screen.png">
+            <div class="features__big-item-right animate" data-animations=" to-left s-1">
+               <img src="imgs/double-dashboard-screen.png" class="ns">
             </div>
         </div>
     </div>
 </section>
-<section class="notifications" >
+<section class="notifications" data-offset="2700">
     <div class="wrapper">
         <div class="notifications__actions">
             <div class="action__in-progress">
                 <h3 class="action__title">Ish jarayonida <em>(3)</em> <a href="#">></a></h3>
                 <div class="action__items">
-                    <div class="action__item">
+                    <div class="action__item ns animate" data-animations=" to-top">
+                        <a href="#" class="circled__action" >N</a>
+                        <div class="action__message">
+                            <h5>New logo for Apple</h5>
+                            <span>
+                                <img src="imgs/icons/clock-circular-outline.svg"> 5 days left
+                            </span>
+                        </div>
+                        <a href="#" class="action__options"><img src="imgs/icons/three-dots-icon.svg" ></a>
+                    </div>
+                    <div class="action__item ns animate" data-animations=" to-top s-1">
                         <a href="#" class="circled__action">N</a>
                         <div class="action__message">
                             <h5>New logo for Apple</h5>
@@ -117,17 +127,7 @@ Bilamizki, hozirgi kunda Telegram plarformasida online do'kon magazinlar orqali 
                         </div>
                         <a href="#" class="action__options"><img src="imgs/icons/three-dots-icon.svg" ></a>
                     </div>
-                    <div class="action__item animate to-top">
-                        <a href="#" class="circled__action">N</a>
-                        <div class="action__message">
-                            <h5>New logo for Apple</h5>
-                            <span>
-                                <img src="imgs/icons/clock-circular-outline.svg"> 5 days left
-                            </span>
-                        </div>
-                        <a href="#" class="action__options"><img src="imgs/icons/three-dots-icon.svg" ></a>
-                    </div>
-                    <div class="action__item animate to-top s-2">
+                    <div class="action__item animate" data-animations=" to-top s-2">
                         <a href="#" class="circled__action">N</a>
                         <div class="action__message">
                             <h5>New logo for Apple</h5>
@@ -152,7 +152,7 @@ Bilamizki, hozirgi kunda Telegram plarformasida online do'kon magazinlar orqali 
                         </div>
                         <a href="#" class="action__options"><img src="imgs/icons/three-dots-icon.svg" ></a>
                     </div>
-                    <div class="action__item animate to-top">
+                    <div class="action__item animate" data-animations=" to-top">
                         <a href="#" class="circled__action">N</a>
                         <div class="action__message">
                             <h5>New logo for Apple</h5>
@@ -169,7 +169,7 @@ Bilamizki, hozirgi kunda Telegram plarformasida online do'kon magazinlar orqali 
         </div>
         <div class="notifications__functions">
             <h2 class="notification__function-title">Drag & Drop xususiyatlari</h2>
-            <p class="animate to-left s-4">
+            <p class="animate" data-animations=" to-left s-4">
 Drag & Drop xususiyatlari sizga osongina yangi market yaratish,
  uni mahsulotlar bilan to'ldirish imkoniyatini beradi.
 
@@ -183,8 +183,8 @@ Drag & Drop xususiyatlari sizga osongina yangi market yaratish,
 </section>
 <section class="pricing" >
     <div class="wrapper">
-        <div class="pricing__info">
-            <h1 class="pricing__info-title animate to-bottom"> 
+        <div class="pricing__info" data-offset="3300">
+            <h1 class="pricing__info-title animate" data-animations=" to-bottom"> 
                 <span style="color: cornflowerblue;font-weight: 700;"> BotMarket</span>ning boshqaruv paneli
             </h1>
             <p>
@@ -197,7 +197,7 @@ Drag & Drop xususiyatlari sizga osongina yangi market yaratish,
             <br>
             <br>
             <div class="pricing__info-image view-3d" >
-                <div class="princing__info-image-desc-left animate to-right s-1">
+                <div class="princing__info-image-desc-left animate" data-animations=" to-right s-1">
                     <h4 class="pricing__info-image-desc-title">Yengil & moslashuvchan sahifalar</h4>
                     <p>
     <span style="color: cornflowerblue;font-weight: 700;"> BotMarket</span> boshqaruv paneli moslashuvchan bo'lib, 
@@ -205,8 +205,8 @@ Drag & Drop xususiyatlari sizga osongina yangi market yaratish,
     Boshqaruv panelinini sahifalari judayam yengil bo'lib, ularni yuklanishi ko'p vaqt olmaydi. sekin internet bilan ham ochib ishilatishingiz mumkin.
                     </p>
                 </div>
-                <img class="skewed__image animate skew" src="imgs/positioned-dashboard.png">
-                <div class="princing__info-image-desc-right animate to-left s-1">
+                <img class="skewed__image animate" data-animations=" skew" src="imgs/positioned-dashboard.png">
+                <div class="princing__info-image-desc-right " data-animations="animate to-left s-1">
                     <h4 class="pricing__info-image-desc-title">Toza & zamonaviy interfeys</h4>
                     <p>
 Boshqaruv paneli siz tanlagan tarifingizga va yaratgan marketingiz qarab moslashib, 
@@ -216,13 +216,13 @@ aynan sizga kerak bo'lgan imkoniyatlarni ko'rsatadi.
                 </div>
             </div>
         </div>
-        <div class="pricing__plans" id="pricing">
+        <div class="pricing__plans" id="pricing" data-offset="4400">
             <h1 class="pricing__plans-title">
                 Ajoyib <span style="color: cornflowerblue;font-weight: 700;"> BotMarket</span>
                 ning tariflari </h1>
             <div class="pricing__items">
 
-<div class="flip-box animate to-top">
+<div class="flip-box animate" data-animations=" to-top">
     <div class="flip-box-inner">
         <div class="flip-box-front pricing__plans-item">
             <h4 class="pricing__plans-item-title">Market 1</h4>
@@ -243,7 +243,7 @@ aynan sizga kerak bo'lgan imkoniyatlarni ko'rsatadi.
         </div>
     </div>
 </div>
-<div class="flip-box animate to-top s-1">
+<div class="flip-box animate" data-animations=" to-top s-1">
     <div class="flip-box-inner">
         <div class="flip-box-front pricing__plans-item">
             <h4 class="pricing__plans-item-title">Market 2</h4>
@@ -264,7 +264,7 @@ aynan sizga kerak bo'lgan imkoniyatlarni ko'rsatadi.
         </div>
     </div>
 </div>
-<div class="flip-box animate to-top s-2">
+<div class="flip-box animate" data-animations=" to-top s-2">
     <div class="flip-box-inner">
         <div class="flip-box-front pricing__plans-item">
             <h4 class="pricing__plans-item-title">Market 3</h4>
@@ -287,16 +287,16 @@ aynan sizga kerak bo'lgan imkoniyatlarni ko'rsatadi.
 </div>
     
             </div>
-            <p class="pricing__interaction-text animate fade-in">
+            <p class="pricing__interaction-text animate" data-animations=" fade-in">
                 Yuqoridagi Tarif rejalar sizga kamlik qiladigan bo'lsa, alohida MARKET VIP paketini olishingiz va online biznesingiz katta masshtabda amalga oshirishingiz mumkin.
             </p>
-            <a href="#" class="button__join-now animate pop-up s-2">VIP ni xohlayman!</a>
+            <a href="#" class="button__join-now animate" data-animations=" pop-up s-2">VIP ni xohlayman!</a>
         </div>
     </div>
 </section>
 
-<footer class="footer" id="footer">
-    <div class="wrapper animate to-top">
+<footer class="footer" data-offset="5000" data-animePosition="end" id="footer">
+    <div class="wrapper animate" data-animations=" to-top">
         <div class="app__info">
             <p>
                 BotMarket - bu Telegram market bot generatori, hisoblanib, onlayn biznes qiluvchilarga harajatlarni va ishlarni oson qilib beruvchi platforma.
@@ -312,7 +312,7 @@ aynan sizga kerak bo'lgan imkoniyatlarni ko'rsatadi.
             <li class="footer__nav-item"><a href="#blog">Blog</a> </li>
             <li class="footer__nav-item"><a href="#contact">Aloqa</a> </li>
             <li class="footer__nav-item social-icons">
-                <a href="#">
+                <a href="#" class="" data-animations="animate fade-in s-1">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                    <path style="fill:#1976D2;" d="M448,0H64C28.704,0,0,28.704,0,64v384c0,35.296,28.704,64,64,64h384c35.296,0,64-28.704,64-64V64
@@ -351,7 +351,7 @@ aynan sizga kerak bo'lgan imkoniyatlarni ko'rsatadi.
                    </g>
                    </svg>
                 </a> 
-                <a href="#">
+                <a href="#" class="" data-animations="animate fade-in s-2">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                <path style="fill:#03A9F4;" d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
@@ -394,7 +394,7 @@ aynan sizga kerak bo'lgan imkoniyatlarni ko'rsatadi.
                </g>
                </svg>
                </a>
-               <a href="#">
+               <a href="#" class="" data-animations="animate fade-in s-3">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                <path style="fill:#CE4234;" d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z"/>
@@ -442,7 +442,7 @@ aynan sizga kerak bo'lgan imkoniyatlarni ko'rsatadi.
                </g>
                </svg>
                </a>
-               <a href="#">
+               <a href="#" class="" data-animations="animate fade-in s-4">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                 <circle style="fill:#41B4E6;" cx="255.997" cy="256" r="255.997"/>
@@ -490,6 +490,11 @@ aynan sizga kerak bo'lgan imkoniyatlarni ko'rsatadi.
     </div>
 </footer>
 <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+<script src="js/animate.js"></script>
+<script>
+const Animater = new animate;
+
+</script>
 <script src="js/front.js"></script>
 </body>
 </html>
