@@ -90,19 +90,15 @@ class animate{
         const elements = screen.querySelectorAll('[data-animations]');
 
         if(elements.length === 0){
-            console.log(screen);            
-            if(screen.getAttribute('data-animations').trim() != ''){
-                const classNames = screen.getAttribute('data-animations');
-                
-                let classes = classNames.split(' ');
-                classes.forEach(className => {
-                    if (!screen.classList.contains(className)) {
-                        screen.className += ' ' + className;
-                        screen.setAttribute('data-animations', '');
-                    }
-                });
-                
-            }
+            const classNames = screen.getAttribute('data-animations');
+            
+            let classes = classNames.split(' ');
+            classes.forEach(className => {
+                if (!screen.classList.contains(className)) {
+                    screen.className += ' ' + className;
+                    screen.setAttribute('data-animations', '');
+                }
+            });
             
             
         }else{
@@ -112,9 +108,6 @@ class animate{
             }
             
             elements.forEach(el => {
-                
-            if(el.getAttribute('data-animations').trim() != ''){
-
                 const classNames = el.getAttribute('data-animations');
                 let classes = classNames.split(" ");               
                 classes.forEach(className => { // className
@@ -123,7 +116,6 @@ class animate{
                         el.setAttribute('data-animations', '');
                     }                     
                 });
-            }
                 
             });
         }

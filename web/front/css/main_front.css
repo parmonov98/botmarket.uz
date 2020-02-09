@@ -683,8 +683,9 @@ html {
     box-shadow: 0 0 2px 5px #5584ff;
     color: #f6f7fa;
 }
+
 .button__join-now {
-    border: #5584ff 1px dotted;
+	border: #5584ff 1px dotted;
     position: relative;
     padding: 16px 65px;
     border-radius: 34px;
@@ -697,7 +698,7 @@ html {
     font-weight: 700;
     display: inline-block;
     text-decoration: none;
-    margin: 80px;
+    margin: 80px 0;
     transition: 0.3s;
 }
 
@@ -770,6 +771,7 @@ html {
     .header__nav{
         margin-top: 0;
     }
+
     .plans__features-list > li {
         font-size: 14px;
     }
@@ -790,7 +792,6 @@ html {
     .notifications > .wrapper {
         display: flex;
         padding-top: 50px;
-        
     }
 
     .notifications__actions .action__title {
@@ -879,7 +880,7 @@ html {
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
   */
-  @media only screen and (max-width: 1024px) and (min-width: 769px){
+ @media only screen and (max-width: 1024px) and (min-width: 769px){
 
     .sec-header{
         height: 800px;
@@ -911,16 +912,16 @@ html {
         width: 75%;
     }
 
-    .features__items{
+
+	.features__items{
         flex-wrap: wrap;
     }
-
+	
     .features__items_i {
         max-width: calc(100% / 2 - 50px);
         margin-top: 50px;
     }
     .features__items_i > h4 {
-        
         font-size: 30px;
         letter-spacing: 0px;
         line-height: 29px;
@@ -1010,7 +1011,6 @@ html {
     }
 
 
-
     .princing__info-image-desc-left > .pricing__info-image-desc-title::after {
         width: calc(250px * 2);
         bottom: 15px;
@@ -1049,18 +1049,25 @@ html {
         display: flex;
         flex-wrap: wrap;
     }
-    
-    .flip-box {
+	
+	.flip-box {
         height: 100%;
         background-color: transparent;
         padding: 30px 0;
         margin-top: 30px;
     }
-
-    .plans__features-list > li {
-        font-size: 16px;
+	
+    .pricing__plans-item {
+        min-width: 420px;
+        padding: 30px 0;
+        flex-basis: calc(100% / 3 - 50PX);
+        margin-top: 30px;
+		
     }
-
+    .plans__features-list > li {
+		
+		font-size: 16px;
+    }
     .pricing__plans-item-price{
         font-size: 20px;
         line-height: 24px;
@@ -1182,17 +1189,34 @@ html {
     .features__big-item .wrapper {
         flex-direction: column !important;
     }
-    
-    .pricing__info-title{
-        line-height: 45px;
-        font-size: 48px;
-    }
 
-    .notifications {
+    .app__btn{
+        width: auto;
+        display: inline-block;
+        padding: 5px 0;
+        font-size: 22px;
+        margin: 30px 0;
+        line-height: 38px;
+    }
+    
+    .features__items_i > .app__btn {
+        padding: 0px 0;
+        line-height: 64px;
+    }
+   
+	
+	.notifications {
         height: auto;
     }
     .notifications > .wrapper{
         flex-direction: column-reverse;
+    }
+    .notifications__actions{
+        flex-direction: column;
+    }
+    .pricing__info-title{
+        line-height: 45px;
+        font-size: 48px;
     }
     .pricing__info-image {
         flex-direction: column;
@@ -1214,6 +1238,10 @@ html {
     .notification__function-title {
         font-size: 48px;
         line-height: 48px;
+    }
+
+    .notifications__actions .action__title{
+        justify-content: start;
     }
     .princing__info-image-desc-left, .princing__info-image-desc-right {
         width: 90%;
@@ -1246,12 +1274,11 @@ html {
     }
     .features__items_i > .block__text {
         font-size: 24px;   
-        margin: 24px 0;
+		margin: 24px 0;
     }
     .pricing__items{
         flex-direction: column;
     }
-    
     .pricing__plans-item-price{
         font-size: 24px;
     }
@@ -1268,10 +1295,11 @@ html {
         color: #0e1a35;
         font-family: "Roboto", sans-serif;
     }
-    .flip-box-front, .flip-box-back {
+	.flip-box-front, .flip-box-back {
         position: absolute;
         height: 100%;
     }
+
     .button__join-now::before {
         left: -10%;
         top: -50%;
@@ -1287,7 +1315,6 @@ html {
     }
 
     .app__info{
-        max-width: 100%;
         text-align: center;
 		order: 2;
     }
@@ -1330,6 +1357,7 @@ html {
         padding: 5px 0;
         font-size: 22px;
         margin: 30px 0;
+        line-height: 38px;
     }
    
     .pricing__plans-item {
