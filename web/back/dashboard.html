@@ -7,7 +7,7 @@
     <title>Merkury Dashboard - main</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/default.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main_backend.css">
 </head>
 <body>
 <div class="root" id="root">
@@ -152,8 +152,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="diagram-content">
-                        <canvas id="myChart"></canvas>
+                    <div class="diagram-content" >
+                        <canvas id="myChart" style="height: 100%; min-width: 360px !important;"></canvas>
                     </div>
                 </div>
                 <div class="diagram-card report-chart">
@@ -407,7 +407,7 @@ const chart = new Chart(
     document.getElementById("myChart"),
 {
     "type":"doughnut",
-    startAngle: 90,
+    startAngle: 180,
     "data":
         {
             labels: ["Website", "Logo", "Social Media", "Software", "Web deigns"],
@@ -417,28 +417,31 @@ const chart = new Chart(
                     "backgroundColor":["#25396e","#5584ff","#4b74e0", "#3755a4", "#4164c2"]
                 }                
             ],
-            indexLabelFontSize: 27,
+            indexLabelFontSize: 100,
         },
         options: {
+            layout: {
+                
+            },
             elements: {
                 arc: {
-                    borderWidth: 0
+                    borderWidth: 1
                 }
             },
-            percentageInnerCutout: 10,
+            percentageInnerCutout: 50,
             legend: {
-                position: 'right',
+                position: 'bottom',
                 labels: {
-                    boxWidth: 30,
-                    padding: 20,
-                    paddingLeft: 30,
-                    fontSize: 18
+                    boxWidth: 10,
+                    paddingTop: 50,
+                    fontSize: 14
                 }
             },
             tooltips: {
                 titleFontSize: 16,
-                bodyFontSize: 16
+                bodyFontSize: 14
             }
+
         }
 });
 
@@ -462,7 +465,8 @@ backgroundColor: "transparent"
             yAxes: [{
                 stacked: true
             }]
-        }
+        },
+        responsive: true
     }
 });
 
